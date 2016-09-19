@@ -27,6 +27,4 @@ class Controller
     @statement.add_transaction(@account.retrieve_transaction.show_transaction)
   end
 
-
-
 end
