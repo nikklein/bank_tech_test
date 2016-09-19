@@ -103,11 +103,33 @@
         null,
         null
       ],
-      "/Users/NNS/Dropbox/Projects/bank_tech_test/spec/controller_spec.rb": [
+      "/Users/NNS/Dropbox/Projects/bank_tech_test/spec/print_statement_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        null,
+        2,
+        null,
+        1,
+        1,
+        2,
         null,
         null,
         null,
+        null
+      ],
+      "/Users/NNS/Dropbox/Projects/bank_tech_test/lib/print_statement.rb": [
+        1,
         null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        6,
         null,
         null,
         null
@@ -150,6 +172,6 @@
         null
       ]
     },
-    "timestamp": 1474307258
+    "timestamp": 1474308864
   }
 }
