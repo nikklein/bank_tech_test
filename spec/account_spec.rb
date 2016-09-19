@@ -5,17 +5,17 @@ describe Account do
   TEST_AMOUNT = 100
   subject {described_class.new}
 
-  describe '#balance' do
-     it {is_expected.to respond_to(:balance)}
+  describe '#show_balance' do
+     it {is_expected.to respond_to(:show_balance)}
      it 'initially has no funds' do
-       expect(subject.balance).to eq(0)
+       expect(subject.show_balance).to eq(0)
      end
   end
   describe '#deposit' do
     it {is_expected.to respond_to(:deposit).with(1).argument}
     it 'adds given amount of money on account' do
       subject.deposit(TEST_AMOUNT)
-      expect(subject.balance).to eq(TEST_AMOUNT)
+      expect(subject.show_balance).to eq(TEST_AMOUNT)
     end
   end
   describe '#withdraw' do
@@ -26,7 +26,7 @@ describe Account do
     it 'deducts correct amount of money' do
       subject.deposit(TEST_AMOUNT)
       subject.withdraw(TEST_AMOUNT)
-      expect(subject.balance).to eq(0)
+      expect(subject.show_balance).to eq(0)
     end
   end
 end

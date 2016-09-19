@@ -1,38 +1,32 @@
-require './lib/statement.rb'
-
+require_relative 'statement.rb'
+require_relative 'transaction.rb'
 class Account
+
   def initialize
     @balance = 0
-    @statement = Statement.new
+    @transaction = Transaction.new
   end
-  def balance
+
+  def show_balance
     @balance
   end
+
   def deposit(amount, date = Time.now)
     @balance += amount
-    create_transaction(date_converter(date), nil, amount)
+    @transaction.add(date_converter(date), nil, amount, @balance)
   end
 
   def withdraw(amount, date = Time.now)
     raise 'You have insufficient funds in your account' if amount > @balance
     @balance -= amount
-    create_transaction(date_converter(date), amount, nil)
+    @transaction.add(date_converter(date), amount, nil, @balance)
   end
 
-  def print_statement
-    @statement.print_transactions
+  def retrieve_transaction
+    @transaction
   end
 
   private
-
-    def create_transaction(date, credit = nil, debit = nil)
-      @transaction = {date: date, credit: credit, debit: debit, balance: @balance}
-      add_to_statement
-    end
-
-    def add_to_statement
-      @statement.add_transaction(@transaction)
-    end
 
     def date_converter date
       date.strftime("%d/%B/%Y")
