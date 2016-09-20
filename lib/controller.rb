@@ -19,8 +19,11 @@ class Controller
   end
 
   def print_statement
-      printer = PrintStatement.new(@statement.list_of_transaction)
       printer.print
+  end
+
+  def printer
+    @printer ||= PrintStatement.new(@statement.list_of_transaction)
   end
 
   def add_to_statement

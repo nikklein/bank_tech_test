@@ -103,7 +103,7 @@
         null,
         null
       ],
-      "/Users/NNS/Dropbox/Projects/bank_tech_test/spec/print_statement_spec.rb": [
+      "/Users/NNS/Dropbox/Projects/bank_tech_test/spec/features/print_statement_spec.rb": [
         1,
         null,
         1,
@@ -172,6 +172,6 @@
         null
       ]
     },
-    "timestamp": 1474308864
+    "timestamp": 1474361420
   }
 }
