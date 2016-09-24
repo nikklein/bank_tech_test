@@ -29,8 +29,8 @@ class Account
 
   private
 
-    def date_converter date
-      date.strftime("%d/%B/%Y")
-    end
+  def date_converter date
+    date.strftime("%d/%B/%Y")
+  end
 
 end

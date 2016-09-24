@@ -28,7 +28,7 @@ class Menu
   end
 
   def print_choices
-    puts "Please choose one of the following: deposit, withdraw or print statement"
+    puts "Please choose one from the following: deposit, withdraw or print statement"
   end
 
   def ask_value

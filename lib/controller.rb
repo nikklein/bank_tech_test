@@ -19,7 +19,7 @@ class Controller
   end
 
   def print_statement
-      printer.print
+    printer.print
   end
 
   def printer
